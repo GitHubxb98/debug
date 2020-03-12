@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.bjsxt.car.mapper.MenusMapper">
+  	<resultMap type="menus" id="menusMap">
+  		<id property="menuid" column="menuid"/>
+  		<result property="menuname" column="menuname"/>
+  		<result property="connurl" column="connurl"/>
+  		<result property="fatherid" column="fatherid"/>
+  	</resultMap>
+  	
+  	<!-- 将role的映射和menus的映射关联 -->
+	<resultMap type="menus" id="MenusAndRoles" extends="menusMap">
+		<collection property="roleList" javaType="List" ofType="Roles"
+			resultMap="com.bjsxt.car.mapper.RolesMapper.rolesMap"></collection>
+	</resultMap>
+	<!-- menus表和role表进行映射 -->
+  	<select id="selectMenusByRoleId" resultMap="MenusAndRoles">
+		select  r.roleid,r.rolename,m.menuid,m.menuname,m.connurl,m.fatherid  from
+		roles r join roles_menus rm
+		on r.roleid = rm.roleid
+		join menus m
+		on rm.menuid=m.menuid
+		where r.roleid=#{roleid}
+	</select>
+  </mapper>

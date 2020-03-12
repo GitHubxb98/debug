@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/UserLoginAction.do" location="50,50" dimension="269,104" />
+  <StrutsActivity path="/AddUserAction.do" location="950,250" dimension="261,104" />
+  <StrutsActivity path="/FindUserAction.do" location="950,450" dimension="261,104" />
+  <StrutsActivity path="/AddCarAction.do" location="50,1050" dimension="254,104" />
+  <StrutsActivity path="/FindCarAction.do" location="650,1050" dimension="254,104" />
+  <StrutsActivity path="/AddCustomersAction.do" location="1250,1050" dimension="296,104" />
+  <StrutsActivity path="/FindCustomersAction.do" location="950,1250" dimension="296,104" />
+  <StrutsActivity path="/RentingCarAction.do" location="1250,1450" dimension="362,104" />
+  <StrutsActivity path="/MonthStatisticsCarAction.do" location="1550,1250" dimension="318,104" />
+  <StrutsActivity path="/RoleManagerAction.do" location="650,2050" dimension="289,104" />
+  <StrutsActivity path="/LogOperatorAction.do" location="1850,1650" dimension="286,104" />
+  <StrutsActivity path="/ExitSystemAction.do" location="1850,2050" dimension="271,104" />
+  <StrutsActivity path="/LoginInfoOperatorAction.do" location="350,2250" dimension="319,104" />
+  <StrutsActivity path="ok;6" location="1850,950" dimension="83,87" />
+  <StrutsActivity path="/index.jsp" location="350,250" dimension="88,53" />
+  <StrutsActivity path="/login.jsp" location="650,250" dimension="86,53" />
+  <StrutsActivity path="/ok.jsp" location="350,450" dimension="72,53" />
+  <StrutsActivity path="/userManager/addUser.jsp" location="50,450" dimension="190,53" />
+  <StrutsActivity path="/error.jsp" location="350,650" dimension="87,53" />
+  <StrutsActivity path="/userManager/viewUser.jsp" location="50,850" dimension="192,53" />
+  <StrutsActivity path="/userManager/findUser.jsp" location="650,450" dimension="189,53" />
+  <StrutsActivity path="/userManager/changeUserPwd.jsp" location="950,850" dimension="233,53" />
+  <StrutsActivity path="/userManager/updateUser.jsp" location="350,850" dimension="208,53" />
+  <StrutsActivity path="/carManager/updateCar.jsp" location="1250,850" dimension="194,53" />
+  <StrutsActivity path="/carManager/viewCars.jsp" location="1250,650" dimension="184,53" />
+  <StrutsActivity path="/custManager/viewCustomers.jsp" location="50,1450" dimension="225,53" />
+  <StrutsActivity path="/custManager/chengeCustomersPwd.jsp" location="650,1450" dimension="266,53" />
+  <StrutsActivity path="/custManager/updateCustomers.jsp" location="350,1450" dimension="241,53" />
+  <StrutsActivity path="/operatorManager/viewRenttables.jsp" location="1550,550" dimension="253,53" />
+  <StrutsActivity path="/operatorManager/showCar.jsp" location="50,2450" dimension="217,53" />
+  <StrutsActivity path="/operatorManager/updateRenttable.jsp" location="1550,750" dimension="263,53" />
+  <StrutsActivity path="/operatorManager/updateCheckTable.jsp" location="1550,350" dimension="275,53" />
+  <StrutsActivity path="/operatorManager/viewCheckTables.jsp" location="50,1850" dimension="265,53" />
+  <StrutsActivity path="/operatorManager/preCreateRenting.jsp" location="50,1650" dimension="269,53" />
+  <StrutsActivity path="/operatorManager/createCheckTable.jsp" location="950,1650" dimension="270,53" />
+  <StrutsActivity path="/operatorStatistics/findMonthReturnCarByInfo.jsp" location="50,2050" dimension="319,53" />
+  <StrutsActivity path="/operatorStatistics/viewMonthReturnCarResult.jsp" location="1250,1850" dimension="320,53" />
+  <StrutsActivity path="/systemManager/addRole.jsp" location="1850,1450" dimension="204,53" />
+  <StrutsActivity path="/systemManager/updateRole.jsp" location="50,2250" dimension="222,53" />
+  <StrutsActivity path="/systemManager/viewAllRole.jsp" location="1550,2050" dimension="220,53" />
+  <StrutsActivity path="/systemManager/viewLog.jsp" location="1850,1850" dimension="202,53" />
+  <StrutsActivity path="/systemManager/showLoginLogInfo.jsp" location="1550,2250" dimension="262,53" />
+  <StrutsActivity path="/showLoginLogInfo.jsp" location="1250,2250" dimension="164,53" />
+  <StrutsActivity path="" location="1550,1650" dimension="32,53" />
+  <StrutsActivity path="viewCars.jsp" location="350,1250" dimension="103,53" />
+  <StrutsActivity path="/viewUser.jsp" location="950,650" dimension="109,53" />
+  <StrutsActivity path="index.jsp" location="950,50" dimension="83,53" />
+  <StrutsActivity path="login.jsp" location="50,250" dimension="81,53" />
+  <StrutsActivity path="/" location="50,650" dimension="37,53" />
+  <StrutsActivity path="viewUser.jsp" location="650,650" dimension="104,53" />
+  <StrutsActivity path="/userManager/.jsp" location="650,850" dimension="140,53" />
+  <StrutsActivity path="viewCar.jsp" location="50,1250" dimension="97,53" />
+  <StrutsActivity path="/viewCars.jsp" location="650,1250" dimension="108,53" />
+  <StrutsActivity path="/operatorManager" location="650,1650" dimension="142,53" />
+  <StrutsActivity path="viewMonthReturnCarResult.jsp" location="650,1850" dimension="208,53" />
+  <StrutsActivity path="/viewMonthReturnCarResult.jsp" location="950,1850" dimension="213,53" />
+  <StrutsActivity path="/viewAllRole.jsp" location="1250,2050" dimension="122,53" />
+  <StrutsActivity path="/showLoginLogInfo" location="950,2250" dimension="144,53" />
+  <StrutsTransition id="ok;6,null,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,973" />
+      <AbsolutePoint location="565,973" />
+      <AbsolutePoint location="565,476" />
+      <AbsolutePoint location="422,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RoleManagerAction.do,updateRole,/systemManager/updateRole.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,2118" />
+      <AbsolutePoint location="161,2118" />
+      <AbsolutePoint location="161,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1510" />
+      <AbsolutePoint location="340,1510" />
+      <AbsolutePoint location="340,476" />
+      <AbsolutePoint location="350,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddUserAction.do,addUser,/userManager/addUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,318" />
+      <AbsolutePoint location="146,318" />
+      <AbsolutePoint location="146,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1080,554" />
+      <AbsolutePoint location="1080,618" />
+      <AbsolutePoint location="386,618" />
+      <AbsolutePoint location="386,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,changeUserPwd,/userManager/changeUserPwd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1110,554" />
+      <AbsolutePoint location="1110,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,preCreateRenting,/operatorManager/preCreateRenting.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1387,1554" />
+      <AbsolutePoint location="1387,1599" />
+      <AbsolutePoint location="184,1599" />
+      <AbsolutePoint location="184,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddUserAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1080,250" />
+      <AbsolutePoint location="1080,-25" />
+      <AbsolutePoint location="483,-25" />
+      <AbsolutePoint location="483,654" />
+      <AbsolutePoint location="437,654" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RoleManagerAction.do,viewAllRole,/systemManager/viewAllRole.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="939,2118" />
+      <AbsolutePoint location="1660,2118" />
+      <AbsolutePoint location="1660,2103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LogOperatorAction.do,viewLog,/systemManager/viewLog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1993,1754" />
+      <AbsolutePoint location="1993,1850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddCustomersAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1459,1050" />
+      <AbsolutePoint location="1459,818" />
+      <AbsolutePoint location="363,818" />
+      <AbsolutePoint location="363,703" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddCustomersAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1489,1050" />
+      <AbsolutePoint location="1489,418" />
+      <AbsolutePoint location="416,418" />
+      <AbsolutePoint location="416,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/MonthStatisticsCarAction.do,findMonthReturnCarByInfo,/operatorStatistics/findMonthReturnCarByInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1739,1354" />
+      <AbsolutePoint location="1739,1978" />
+      <AbsolutePoint location="209,1978" />
+      <AbsolutePoint location="209,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,updateUser,/userManager/updateUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1044,554" />
+      <AbsolutePoint location="1044,578" />
+      <AbsolutePoint location="453,578" />
+      <AbsolutePoint location="453,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,createCheckTable,/operatorManager/createCheckTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1409,1554" />
+      <AbsolutePoint location="1409,1676" />
+      <AbsolutePoint location="1220,1676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCarAction.do,viewCars,/carManager/viewCars.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="904,1102" />
+      <AbsolutePoint location="1226,1102" />
+      <AbsolutePoint location="1226,676" />
+      <AbsolutePoint location="1250,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,518" />
+      <AbsolutePoint location="416,518" />
+      <AbsolutePoint location="416,503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCustomersAction.do,updateCustomers,/custManager/updateCustomers.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1098,1354" />
+      <AbsolutePoint location="1098,1408" />
+      <AbsolutePoint location="470,1408" />
+      <AbsolutePoint location="470,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,viewRenttables,/operatorManager/viewRenttables.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1612,1518" />
+      <AbsolutePoint location="2211,1518" />
+      <AbsolutePoint location="2211,576" />
+      <AbsolutePoint location="1803,576" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCustomersAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1098,1250" />
+      <AbsolutePoint location="1098,1203" />
+      <AbsolutePoint location="579,1203" />
+      <AbsolutePoint location="579,698" />
+      <AbsolutePoint location="437,698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,updateRenttable,/operatorManager/updateRenttable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1431,1450" />
+      <AbsolutePoint location="1431,1169" />
+      <AbsolutePoint location="1681,1169" />
+      <AbsolutePoint location="1681,803" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ExitSystemAction.do,login,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2121,2102" />
+      <AbsolutePoint location="2151,2102" />
+      <AbsolutePoint location="2151,199" />
+      <AbsolutePoint location="723,199" />
+      <AbsolutePoint location="723,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,updateCheckTable,/operatorManager/updateCheckTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1488" />
+      <AbsolutePoint location="931,1488" />
+      <AbsolutePoint location="931,378" />
+      <AbsolutePoint location="1550,378" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddUserAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,348" />
+      <AbsolutePoint location="386,348" />
+      <AbsolutePoint location="386,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.jsp,null,/UserLoginAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="693,250" />
+      <AbsolutePoint location="693,88" />
+      <AbsolutePoint location="319,88" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,viewUser,/userManager/viewUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,548" />
+      <AbsolutePoint location="146,548" />
+      <AbsolutePoint location="146,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCustomersAction.do,viewCustomers,/custManager/viewCustomers.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1348" />
+      <AbsolutePoint location="162,1348" />
+      <AbsolutePoint location="162,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LoginInfoOperatorAction.do,showLoginLogInfo,/systemManager/showLoginLogInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="669,2318" />
+      <AbsolutePoint location="1681,2318" />
+      <AbsolutePoint location="1681,2303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/MonthStatisticsCarAction.do,viewMonthReturnCarResult,/operatorStatistics/viewMonthReturnCarResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1709,1354" />
+      <AbsolutePoint location="1709,1876" />
+      <AbsolutePoint location="1570,1876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddCarAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="257,1050" />
+      <AbsolutePoint location="257,454" />
+      <AbsolutePoint location="350,454" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1431,1554" />
+      <AbsolutePoint location="1431,1724" />
+      <AbsolutePoint location="642,1724" />
+      <AbsolutePoint location="642,676" />
+      <AbsolutePoint location="437,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RoleManagerAction.do,addRole,/systemManager/addRole.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="873,2050" />
+      <AbsolutePoint location="873,1629" />
+      <AbsolutePoint location="1952,1629" />
+      <AbsolutePoint location="1952,1503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCustomersAction.do,chengeCustomersPwd,/custManager/chengeCustomersPwd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1288" />
+      <AbsolutePoint location="783,1288" />
+      <AbsolutePoint location="783,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,viewCheckTables,/operatorManager/viewCheckTables.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1461,1554" />
+      <AbsolutePoint location="1461,1799" />
+      <AbsolutePoint location="182,1799" />
+      <AbsolutePoint location="182,1850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/AddCarAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="287,1050" />
+      <AbsolutePoint location="287,676" />
+      <AbsolutePoint location="350,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCustomersAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1318" />
+      <AbsolutePoint location="-25,1318" />
+      <AbsolutePoint location="-25,578" />
+      <AbsolutePoint location="386,578" />
+      <AbsolutePoint location="386,503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindUserAction.do,findUser,/userManager/findUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,488" />
+      <AbsolutePoint location="839,488" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCarAction.do,error,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="805,1050" />
+      <AbsolutePoint location="805,765" />
+      <AbsolutePoint location="393,765" />
+      <AbsolutePoint location="393,703" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RentingCarAction.do,showCar,/operatorManager/showCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1532" />
+      <AbsolutePoint location="1235,1532" />
+      <AbsolutePoint location="1235,2476" />
+      <AbsolutePoint location="267,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/UserLoginAction.do,ok,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="184,154" />
+      <AbsolutePoint location="184,276" />
+      <AbsolutePoint location="350,276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCarAction.do,updateCar,/carManager/updateCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="775,1050" />
+      <AbsolutePoint location="775,995" />
+      <AbsolutePoint location="1347,995" />
+      <AbsolutePoint location="1347,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/FindCarAction.do,ok,/ok.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1102" />
+      <AbsolutePoint location="606,1102" />
+      <AbsolutePoint location="606,454" />
+      <AbsolutePoint location="422,454" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
