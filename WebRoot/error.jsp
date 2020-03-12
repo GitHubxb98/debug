@@ -31,6 +31,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
- 	  操作错误！请与管理员联系！
+ 	  操作失败！请与管理员联系！
   </body>
 </html>
