@@ -43,48 +43,6 @@ body {
 		document.getElementById('img1').src = "ValidateCodeServlet.do?"
 				+ Math.random();
 	}
-/* 	function correctPNG() {
-		var arVersion = navigator.appVersion.split("MSIE")
-		var version = parseFloat(arVersion[1])
-		if ((version >= 5.5) && (document.body.filters)) {
-			for (var j = 0; j < document.images.length; j++) {
-				var img = document.images[j]
-				var imgName = img.src.toUpperCase()
-				if (imgName.substring(imgName.length - 3, imgName.length) == "PNG") {
-					var imgID = (img.id) ? "id='" + img.id + "' " : ""
-					var imgClass = (img.className) ? "class='" + img.className
-							+ "' " : ""
-					var imgTitle = (img.title) ? "title='" + img.title + "' "
-							: "title='" + img.alt + "' "
-					var imgStyle = "display:inline-block;" + img.style.cssText
-					if (img.align == "left")
-						imgStyle = "float:left;" + imgStyle
-					if (img.align == "right")
-						imgStyle = "float:right;" + imgStyle
-					if (img.parentElement.href)
-						imgStyle = "cursor:hand;" + imgStyle
-					var strNewHTML = "<span "
-							+ imgID
-							+ imgClass
-							+ imgTitle
-							+ " style=\""
-							+ "width:"
-							+ img.width
-							+ "px; height:"
-							+ img.height
-							+ "px;"
-							+ imgStyle
-							+ ";"
-							+ "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
-							+ "(src=\'" + img.src
-							+ "\', sizingMethod='scale');\"></span>"
-					img.outerHTML = strNewHTML
-					j = j - 1
-				}
-			}
-		}
-	}
-	window.attachEvent("onload", correctPNG); */
 </script>
 <script type="text/javascript">
 	//登陆名提示
@@ -320,9 +278,6 @@ body {
 																<td width="20%" height="35"><input name="Submit"
 																	type="submit" class="button" id="Submit" value="登 录" />
 																</td>
-																<td width="67%" class="top_hui_text"><input
-																	name="cs" type="button" class="button" id="cs"
-																	value="取 消" onClick="showConfirmMsg1()"></td>
 															</tr>
 														</table>
 														<br>

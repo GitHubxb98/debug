@@ -84,10 +84,6 @@ public class UserController{
 		if (flag) {
 			return "forward:/car/user/findUserByPage";
 		}
-		//֮��������Ҫ��ѯ�����û���Ϣ
-		//List<Users> userList = userService.finAllUser();
-		//req.setAttribute("userList", userList);
-		//��ת����ҳ��ѯ
 		return "exception";
 	}
 	/**

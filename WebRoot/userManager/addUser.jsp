@@ -20,6 +20,8 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 <link href="images/skin.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
 <style type="text/css">
 body {
 	margin-left: 0px;
@@ -28,14 +30,57 @@ body {
 	margin-bottom: 0px;
 	background-color: #EEF2FB;
 }
+.info {
+	font-size: 10pt;
+	color: red;
+}
 </style>
 <script type="text/javascript">
 	function subForm() {
 		document.forms[0].submit();
 	}
+	function reset(){
+		document.forms[0].reset();
+	}
+	function checkUserName() {
+		if ($("#userName").val() == '') {
+			$("#userNameInfo").text("用户名不能为空");
+		}
+	}
+	function checkIdentity() {
+		if ($("#identity").val() == '') {
+			$("#identityInfo").text("身份证不能为空");
+		}
+	}
+	function checkPassword() {
+		if ($("#userPwd").val() == '') {
+			$("#passwordInfo").text("密码不能为空");
+		}
+	}
+	function checkPhone() {
+		if ($("#phone").val() == '') {
+			$("#phoneInfo").text("电话不能为空");
+		} else if (!(/^1[3456789]\d{9}$/.test($("#phone").val()))) {
+			$("#phoneInfo").text("手机号码有误，请重填");
+		} else {
+		}
+	}
+	function checkAddress() {
+		if ($("#address").val() == '') {
+			$("#addressInfo").text("地址不能为空");
+		}
+	}
+	function checkPosition() {
+		if ($("#position").val() == '') {
+			$("#positionInfo").text("职业不能为空");
+		}
+	}
+	function checkFullName() {
+		if ($("#fullName").val() == '') {
+			$("#fullNameInfo").text("姓名不能为空");
+		}
+	}
 </script>
-<script src="js/jquery.js"></script>
-<script src="js/jquery-1.9.1.js"></script>
 </head>
 
 <body>
@@ -69,23 +114,36 @@ body {
 									<table width="100%" border="0" cellpadding="0" cellspacing="0">
 										<tr>
 											<td width="14%"><div align="center" class="left_txt">登录名</div></td>
-											<td width="23%"><input type="text" name="username"
-												id="userName">*</td>
+											<td width="23%">*<input type="text" name="username"
+												id="userName" onfocus="$('#userNameInfo').text('')"
+												onblur="checkUserName() "><span id="userNameInfo"
+												class="info"></span></td>
 											<td width="15%"><div align="center" class="left_txt">身份证</div></td>
-											<td width="48%"><input type="text" name="identity"
-												id="identity">*</td>
+											<td width="48%">*<input type="text" name="identity"
+												onfocus="$('#identityInfo').text('')"
+												onblur="checkIdentity() " id="identity"><span
+												id="identityInfo" class="info" size="18"></span></td>
 										</tr>
 										<tr>
 											<td><div align="center" class="left_txt">用户密码</div></td>
-											<td><input type="password" name="userpwd" id="userPwd"
-												size="21">*</td>
+											<td>*<input type="password" name="userpwd" id="userPwd"
+												onfocus="$('#passwordInfo').text('')"
+												onblur="checkPassword() " size="21">
+												<span
+												id="passwordInfo" class="info"></span></td>
 											<td><div align="center" class="left_txt">联系电话</div></td>
-											<td><input type="text" name="phone" id="phone">*</td>
+											<td>*<input type="text" name="phone" id="phone"
+												onfocus="$('#phoneInfo').text('')"
+												onblur="checkPhone() " size="11"><span
+												id="phoneInfo" class="info"></span></td>
 
 										</tr>
 										<tr>
 											<td><div align="center" class="left_txt">地址</div></td>
-											<td><input type="text" name="address" id="address">*</td>
+											<td>*<input type="text" name="address" id="address"
+												onfocus="$('#addressInfo').text('')"
+												onblur="checkAddress() "><span
+												id="addressInfo" class="info"></td>
 											<td><div align="center" class="left_txt">性别</div></td>
 											<td><select NAME="sex" id="sex" style="width: 105px;">
 													<option value="男">男</option>
@@ -95,7 +153,10 @@ body {
 										</tr>
 										<tr>
 											<td><div align="center" class="left_txt">职位</div></td>
-											<td><input type="text" name="position" id="position">*</td>
+											<td>*<input type="text" name="position" id="position"
+												onfocus="$('#positionInfo').text('')"
+												onblur="checkPosition() "><span
+												id="positionInfo" class="info"></td>
 											<td><div align="center" class="left_txt">用户类型</div></td>
 											<td><label> <select name="userLevel">
 														<c:if test="${requestScope.roles != null}">
@@ -108,7 +169,10 @@ body {
 										</tr>
 										<tr>
 											<td><div align="center" class="left_txt">姓名</div></td>
-											<td><input type="text" id="fullName" name="fullname">*</td>
+											<td>*<input type="text" id="fullName" name="fullname"
+												onfocus="$('#fullNameInfo').text('')"
+												onblur="checkFullName() "><span
+												id="fullNameInfo" class="info"></td>
 
 										</tr>
 									</table>
@@ -116,14 +180,11 @@ body {
 										<tr>
 											<td height="107">
 												<div align="center">
-													<a href="#" style="cursor: hand;"> <img
-														src="<%=basePath%>images/carimg/ok.gif"
-														onclick="subForm()">
-													</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-														href="#" style="cursor: hand;"><img
+													<img src="<%=basePath%>images/carimg/ok.gif"
+														onclick="subForm()" style="cursor: hand;">
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
 														src="<%=basePath%>images/carimg/reset.gif"
-														onclick="reset()" style="cursor: hand;"></a>
-
+														onclick="reset()" style="cursor: hand;">
 												</div>
 											</td>
 										</tr>
